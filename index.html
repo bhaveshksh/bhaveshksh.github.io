@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavesh Kshirsagar | Data Analyst Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Bhavesh Kshirsagar, an aspiring Data Analyst skilled in Excel, Power BI, SQL, and Python.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Bhavesh<span>.Data</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Aspiring Data Analyst <br> <span>Turning Data into Insights</span></h1>
+                <p>I specialize in transforming raw data into actionable business strategies using tools like Excel,
+                    Power BI, SQL, and Python.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="BhaveshKshirsagar_Resume.pdf" target="_blank" class="btn btn-secondary">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/profile.jpg" alt="Bhavesh Kshirsagar">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/profile.jpg" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">About Me</h2>
+                    <p class="lead">Passionate about uncovering stories hidden within data.</p>
+                    <p>My technical expertise spans across the entire data analysis lifecycle, from data extraction and
+                        cleaning to advanced visualization and statistical modeling. I leverage a powerful stack of
+                        tools to derive meaningful insights.</p>
+                    <p>I am a dedicated and detail-oriented professional with a strong foundation in data analytics. I
+                        enjoy solving complex problems and translating data into clear, actionable insights that drive
+                        business growth.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Data Cleaning & Preprocessing</li>
+                        <li><i class="fas fa-check-circle"></i> Statistical Analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Dashboard Creation</li>
+                        <li><i class="fas fa-check-circle"></i> Predictive Modeling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Data Tools -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Data Tools</h3>
+                    <ul>
+                        <li>Excel (Pivot Tables, Power Query)</li>
+                        <li>Power BI (DAX, Modeling)</li>
+                        <li>Tableau (Dashboards)</li>
+                    </ul>
+                </div>
+                <!-- Programming -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python (Pandas, NumPy)</li>
+                        <li>Matplotlib, Seaborn</li>
+                        <li>SQL (Joins, CTEs, Window Functions)</li>
+                    </ul>
+                </div>
+                <!-- Databases -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>SQL Server</li>
+                        <li>Data Warehousing Concepts</li>
+                    </ul>
+                </div>
+                <!-- Statistics -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+                    <h3>Statistics</h3>
+                    <ul>
+                        <li>Descriptive Statistics</li>
+                        <li>Hypothesis Testing</li>
+                        <li>Regression Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project_nhs.png" alt="NHS Waiting List Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Power BI</span>
+                        <h3>NHS Waiting List Insights</h3>
+                        <p class="project-problem"><strong>Problem:</strong> Executive management lacked visibility into
+                            real-time patient waiting times across departments, leading to resource allocation
+                            inefficiencies.</p>
+                        <p><strong>Solution:</strong> Developed a comprehensive Power BI dashboard integrating data from
+                            multiple SQL sources.</p>
+                        <ul class="project-details">
+                            <li>Implemented Row-Level Security (RLS) for data privacy.</li>
+                            <li>Designed interactive KPI cards for average wait times.</li>
+                            <li>Created drill-through capabilities for departmental deep-dives.</li>
+                        </ul>
+                        <p class="project-impact"><strong>Impact:</strong> Increased stakeholder engagement by 40% and
+                            reduced reporting time by 15 hours/month.</p>
+                        <p class="project-tools"><strong>Tools:</strong> SQL, Power BI, DAX</p>
+                        <a href="https://github.com/bhaveshksh" target="_blank" class="btn btn-sm">View on GitHub <i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project_sales.png" alt="Sales Data Analysis Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Excel</span>
+                        <h3>Sales Data Analysis</h3>
+                        <p class="project-problem"><strong>Problem:</strong> Raw sales data was unorganized and
+                            scattered, making it difficult to identify regional performance trends and top-selling
+                            products.</p>
+                        <p><strong>Solution:</strong> Built an interactive Excel dashboard using advanced Pivot Tables
+                            and Slicers.</p>
+                        <ul class="project-details">
+                            <li>Cleaned and standardized 50,000+ rows of raw data.</li>
+                            <li>Analyzed month-over-month growth and regional variance.</li>
+                            <li>Automated data refresh using Power Query.</li>
+                        </ul>
+                        <p class="project-impact"><strong>Impact:</strong> Provided clear insights that helped optimize
+                            inventory distribution for underperforming regions.</p>
+                        <p class="project-tools"><strong>Tools:</strong> Excel, Power Query, SQL</p>
+                        <a href="https://github.com/bhaveshksh" target="_blank" class="btn btn-sm">View on GitHub <i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project_supply.png" alt="Supply Chain Analysis">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Python</span>
+                        <h3>Supply Chain EDA</h3>
+                        <p class="project-problem"><strong>Problem:</strong> Unpredictable delivery delays were causing
+                            supply chain bottlenecks and customer dissatisfaction.</p>
+                        <p><strong>Solution:</strong> Conducted extensive Exploratory Data Analysis (EDA) using Python
+                            to identify root causes of delays.</p>
+                        <ul class="project-details">
+                            <li>Performed data preprocessing to handle missing values and outliers.</li>
+                            <li>Visualized lead time distributions using Seaborn and Matplotlib.</li>
+                            <li>Identified correlation between carrier type and delay frequency.</li>
+                        </ul>
+                        <p class="project-impact"><strong>Impact:</strong> Identified key factors contributing to
+                            delays, leading to a strategy that reduced late deliveries by 15%.</p>
+                        <p class="project-tools"><strong>Tools:</strong> Python, Pandas, Matplotlib, Seaborn</p>
+                        <a href="https://github.com/bhaveshksh" target="_blank" class="btn btn-sm">View on GitHub <i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/smart_engine.png" alt="Smart Engine Locking System"
+                            style="object-fit: cover; padding: 0;">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">IoT / Embedded</span>
+                        <h3>Smart Engine Locking System</h3>
+                        <p class="project-problem"><strong>Problem:</strong> Vehicle theft and unauthorized access are
+                            major concerns for vehicle owners.</p>
+                        <p><strong>Solution:</strong> Designed a smart locking system using embedded systems to enhance
+                            vehicle security.</p>
+                        <ul class="project-details">
+                            <li>Implemented biometric authentication for engine access.</li>
+                            <li>Integrated GSM module for remote alerts.</li>
+                        </ul>
+                        <p class="project-tools"><strong>Tools:</strong> Embedded C, Microcontrollers</p>
+                        <a href="Smart Engine locking system for vehicle A.pdf" target="_blank" class="btn btn-sm">View
+                            Documentation <i class="fas fa-file-pdf"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Data Analyst Intern</h3>
+                        <span class="company">Unified Mentor Pvt Ltd</span>
+                        <ul>
+                            <li>Analyzed sales trends & customer churn.</li>
+                            <li>Used SQL + Python for Exploratory Data Analysis (EDA).</li>
+                            <li>Created business-ready visual reports to support decision making.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 50px;">Certifications</h2>
+            <div class="cert-list"
+                style="background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05);">
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px; color: var(--secondary-text); font-size: 1.1rem;">
+                        <i class="fas fa-certificate" style="color: var(--accent-color); margin-right: 10px;"></i>
+                        Data Analyst Intern, Unified Mentor Pvt Ltd <a href="#" style="text-decoration: none;">🔗</a>
+                    </li>
+                    <li style="margin-bottom: 15px; color: var(--secondary-text); font-size: 1.1rem;">
+                        <i class="fas fa-certificate" style="color: var(--accent-color); margin-right: 10px;"></i>
+                        2025 Masterclass on Data Science using Python A–Z for ML (Udemy Certification) <a href="#"
+                            style="text-decoration: none;">🔗</a>
+                    </li>
+                    <li style="margin-bottom: 15px; color: var(--secondary-text); font-size: 1.1rem;">
+                        <i class="fas fa-certificate" style="color: var(--accent-color); margin-right: 10px;"></i>
+                        Data Analytics and Visualization Job Simulation. <a href="#"
+                            style="text-decoration: none;">🔗</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>bhaveshkshirsagar50@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 9325369612</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Pune, Maharashtra</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/bhaveshkshirsagar/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/bhaveshksh" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bhavesh Kshirsagar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
