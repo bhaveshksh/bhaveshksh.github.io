@@ -6,7 +6,7 @@
 Welcome to my portfolio! This website showcases my skills and projects as a Data Analyst.
 
 ### 🔗 Live Demo
-[View Portfolio](https://bhaveshksh.github.io/portfolio/)
+[View Portfolio](https://bhaveshksh.github.io)
 
 ### 🛠️ Projects Featured
 1.  **NHS Waiting List Insights** (Power BI, SQL)
