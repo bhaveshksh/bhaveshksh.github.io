@@ -130,6 +130,29 @@ ul {
     color: var(--bg-color);
 }
 
+.btn-mini {
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 5px;
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: var(--transition);
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.btn-mini:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    transform: translateY(-2px);
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -770,4 +793,5 @@ footer p {
         padding: 25px;
     }
 }
+
 
