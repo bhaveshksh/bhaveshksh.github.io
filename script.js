@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
             const formData = new FormData(contactForm);
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.textContent;
-            
+
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
 
@@ -54,24 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 const response = await fetch(contactForm.action, {
                     method: 'POST',
                     body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
+                    mode: 'no-cors' // Google Scripts often require no-cors for simple POSTs
                 });
 
-                if (response.ok) {
-                    alert(`Thank you! Your message has been sent successfully.`);
-                    contactForm.reset();
-                } else {
-                    const data = await response.json();
-                    if (Object.hasOwn(data, 'errors')) {
-                        alert(data["errors"].map(error => error["message"]).join(", "));
-                    } else {
-                        alert("Oops! There was a problem submitting your form");
-                    }
-                }
+                // With no-cors, we can't read the response body, but we can assume success if no error is thrown
+                alert(`Thank you! Your message has been sent successfully.`);
+                contactForm.reset();
             } catch (error) {
-                alert("Oops! There was a problem submitting your form");
+                alert("Oops! There was a problem submitting your form. Please try again.");
+                console.error("Form submission error:", error);
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.textContent = originalBtnText;
