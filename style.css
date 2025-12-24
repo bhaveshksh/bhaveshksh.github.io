@@ -693,6 +693,19 @@ footer p {
     .contact-info {
         max-width: 100%;
     }
+
+    .contact-item {
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .contact-item p {
+        word-break: break-all;
+        overflow-wrap: anywhere;
+        flex: 1;
+        min-width: 0;
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -757,3 +770,4 @@ footer p {
         padding: 25px;
     }
 }
+
