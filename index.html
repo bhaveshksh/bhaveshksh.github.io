@@ -57,25 +57,102 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/profile.jpg" alt="About Me">
+            <div class="about-wrapper">
+                <!-- Left Column: Profile & Skills -->
+                <div class="about-left">
+                    <div class="profile-info">
+                        <div class="profile-img-container">
+                            <img src="assets/profile.jpg" alt="Bhavesh Kshirsagar">
+                        </div>
+                        <div class="personal-details">
+                            <p><strong>Name:</strong> Bhavesh Kshirsagar</p>
+                            <p><strong>Job Role:</strong> Aspiring Data Analyst</p>
+                            <p><strong>Experience:</strong> 6+ Months (Internship)</p>
+                            <p><strong>Address:</strong> Pune, Maharashtra</p>
+                        </div>
+                    </div>
+                    <div class="skills-bars">
+                        <h3>Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-line" data-percent="90%"><span style="width: 90%;"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PYTHON</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-line" data-percent="85%"><span style="width: 85%;"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Data Visualization</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-line" data-percent="90%"><span style="width: 90%;"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Excel</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-line" data-percent="95%"><span style="width: 95%;"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Statistics</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-line" data-percent="80%"><span style="width: 80%;"></span></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">About Me</h2>
-                    <p class="lead">Passionate about uncovering stories hidden within data.</p>
-                    <p>My technical expertise spans across the entire data analysis lifecycle, from data extraction and
-                        cleaning to advanced visualization and statistical modeling. I leverage a powerful stack of
-                        tools to derive meaningful insights.</p>
-                    <p>I am a dedicated and detail-oriented professional with a strong foundation in data analytics. I
-                        enjoy solving complex problems and translating data into clear, actionable insights that drive
-                        business growth.</p>
-                    <ul class="about-list">
-                        <li><i class="fas fa-check-circle"></i> Data Cleaning & Preprocessing</li>
-                        <li><i class="fas fa-check-circle"></i> Statistical Analysis</li>
-                        <li><i class="fas fa-check-circle"></i> Dashboard Creation</li>
-                        <li><i class="fas fa-check-circle"></i> Predictive Modeling</li>
-                    </ul>
+
+                <!-- Right Column: About Text & Details -->
+                <div class="about-right">
+                    <div class="about-heading">
+                        <h2 class="section-title-bg">About</h2>
+                        <h2 class="section-title">About Me</h2>
+                    </div>
+                    <p class="about-summary">
+                        Passionate about uncovering stories hidden within data. My technical expertise spans across the
+                        entire data analysis lifecycle, from data extraction and cleaning to advanced visualization and
+                        statistical modeling. I leverage a powerful stack of tools like SQL, Python, and Power BI to
+                        derive meaningful insights that drive business growth.
+                    </p>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Profile:</span>
+                            <span class="detail-value">Data Analytics & Visualization</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Domain:</span>
+                            <span class="detail-value">Sales, Healthcare & Supply Chain</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Education:</span>
+                            <span class="detail-value">Bachelor of Engineering</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Language:</span>
+                            <span class="detail-value">English, Hindi, Marathi</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">BI Tools:</span>
+                            <span class="detail-value">Microsoft Power BI</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Programming Skills:</span>
+                            <span class="detail-value">SQL, Python, OOPS, Excel, Pandas, NumPy</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Interest:</span>
+                            <span class="detail-value">Data Storytelling, Traveling, Teaching</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,8 +169,7 @@
                     <h3>Data Tools</h3>
                     <ul>
                         <li>Excel (Pivot Tables, Power Query)</li>
-                        <li>Power BI (DAX, Modeling)</li>
-                        <li>Tableau (Dashboards)</li>
+                        <li>Power BI (DAX, Modeling, Dashboards)</li>
                     </ul>
                 </div>
                 <!-- Programming -->
@@ -101,7 +177,7 @@
                     <div class="skill-icon"><i class="fas fa-code"></i></div>
                     <h3>Programming</h3>
                     <ul>
-                        <li>Python (Pandas, NumPy)</li>
+                        <li>Python (Pandas, NumPy, PySpark)</li>
                         <li>Matplotlib, Seaborn</li>
                         <li>SQL (Joins, CTEs, Window Functions)</li>
                     </ul>
@@ -316,6 +392,9 @@
                     </div>
                     <div class="form-group">
                         <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
                     </div>
                     <div class="form-group">
                         <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
